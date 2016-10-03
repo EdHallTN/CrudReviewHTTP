@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<p>
+<h3>
+    Please login...
+</h3>
+</p>
+<form action="/login" method="post">
+    <input type="text" placeholder="Enter your first name" name="loginName"/>
+    <input type="text" placeholder="Enter your last name" name="loginName"/>
+    <button type="submit">Submit</button>
+</form>
+
+<ol>
+
+{{#albums}}
+<li>Album Title: {{title}} by Artist: {{artist}}</li><br>{{/albums}}
+
+</ol>
+</body>
+</html>

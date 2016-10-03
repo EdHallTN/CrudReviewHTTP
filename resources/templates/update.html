@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+Press submit to update your information
+{{#albums}}
+{{title}}, {{artist}}
+<form action="/update-entry" method="post">
+    <input type="text" placeholder="Title" name="title"/>
+    <input type="text" placeholder="Artist" name="artist"/>
+    <input type="hidden" value="{{id}}" name="updateID">
+    <button type="submit">Submit</button>
+</form>
+{{/albums}}
+</body>
+</html>
